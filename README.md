@@ -126,7 +126,7 @@ verify_results.py        независимая сверка сохранённ�
 tests/                   11 проверок математических и поведенческих свойств
 data/                    исходный MovieLens с условиями использования
 results/                 таблицы, JSON, графики, протоколы
-reports/                 готовый отчёт Word, PDF, Markdown
+reports/                 готовый отчёт Word, PDF
 ```
 
 Время обучения в `summary.json` не включает общий `Context` и построение TF-IDF;
