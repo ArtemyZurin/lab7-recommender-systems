@@ -1,0 +1,100 @@
+{
+  "ratings": 100836,
+  "users": 610,
+  "catalog_items": 9742,
+  "rated_items": 9724,
+  "sparsity": 0.9830317267467884,
+  "median_user_ratings": 70.5,
+  "median_item_ratings": 3.0,
+  "positive_ratings": 48580,
+  "partitions": {
+    "train": {
+      "ratings": 80668,
+      "users": 522,
+      "items": 7867,
+      "start_utc": "1996-03-29 18:36:55+00:00",
+      "end_utc": "2016-03-22 08:26:02+00:00"
+    },
+    "validation": {
+      "ratings": 10084,
+      "users": 62,
+      "items": 3261,
+      "start_utc": "2016-03-22 08:26:11+00:00",
+      "end_utc": "2017-06-21 07:17:25+00:00"
+    },
+    "test": {
+      "ratings": 10084,
+      "users": 74,
+      "items": 4428,
+      "start_utc": "2017-06-21 07:17:30+00:00",
+      "end_utc": "2018-09-24 14:27:30+00:00"
+    }
+  },
+  "final_train_ratings": 90752,
+  "candidate_items": 8586,
+  "test_users": 74,
+  "evaluated_users": 72,
+  "excluded_no_test_positive": 2,
+  "cold_users": 47,
+  "unreachable_test_positives": 652,
+  "test_positives": 4128,
+  "selected_examples": [
+    414,
+    511
+  ],
+  "seed": 42,
+  "parameters": {
+    "svd": 100,
+    "als": 100
+  },
+  "k": [
+    5,
+    10
+  ],
+  "timings": {
+    "popular": {
+      "fit_seconds": 0.00012729992158710957,
+      "evaluate_seconds": 0.06548410002142191
+    },
+    "content": {
+      "fit_seconds": 1.2599979527294636e-05,
+      "evaluate_seconds": 0.08314140001311898
+    },
+    "svd": {
+      "fit_seconds": 0.6803523000562564,
+      "evaluate_seconds": 0.12107899994589388
+    },
+    "als": {
+      "fit_seconds": 0.6358143999241292,
+      "evaluate_seconds": 0.06154759996570647
+    },
+    "item_knn": {
+      "fit_seconds": 0.5142406999366358,
+      "evaluate_seconds": 0.06187800003681332
+    }
+  },
+  "feedback": "SVD: explicit 0.5..5; ALS/item_knn: binary rating>=4, not real view logs",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "scikit-surprise": "1.1.5",
+    "implicit": "0.7.3",
+    "matplotlib": "3.11.2"
+  },
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "code_sha256": {
+    "recommender\\__init__.py": "34d0a00cb0f63ec77c092b82db804b8557bdafb6acb85ee5a2fbc1917d2e5b2c",
+    "recommender\\data.py": "dc8a576300dadb072261af947b20642e011ca839d4f3920c2e2f286a00e46d55",
+    "recommender\\experiment.py": "bd2ad44ff85484d04dab2c795d0dad6bce44fd7adbcb07327eb35aacee2eef30",
+    "recommender\\metrics.py": "5a605de9a1f2a96400dc0e0436d2777092dc6ab3a9319516c21f0551c26228c7",
+    "recommender\\models.py": "73ea0322bf3cf2d005d7d004dec2866dbf88045d2410b7d3677433ea3aa768ff"
+  },
+  "input_sha256": {
+    "ratings.csv": "aa289ca83157595d0df6aea1be6a4ded676ddc4385472e8313a8ed9805352646",
+    "movies.csv": "5a5f32dd9bb3797b8e728a1b98958789d2b13f294a69fdfbc5727f8a9611aa07"
+  },
+  "elapsed_seconds": 5.897889200015925
+}

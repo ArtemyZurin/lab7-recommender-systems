@@ -1,0 +1,2 @@
+# Preserve file bytes so the submitted SHA-256 checksums survive checkout.
+* -text
